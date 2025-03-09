@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <script>
+
+    </script>
+</head>
+<style>
+
+    div img {
+        height: 450px;
+        width: 1325px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .bgc {
+        position:relative ;
+        height: 450px;
+        width: 1325px;
+        padding-top:10px ;
+        margin: 0;
+        display: block;
+    }
+
+    .nav {
+        height: 65px;
+        width: 1350px;
+        background-color: rgb(10, 54, 177);
+        padding: 0;
+        margin: 0;
+        display: flex;
+        top: 0;
+        justify-content: center;
+        position: sticky;
+    }
+    div nav{
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    nav a:nth-child(n):hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.3); 
+        color: rgb(243, 106, 14);
+    }
+    
+    nav ul li {
+        text-decoration: none;
+        color: rgb(238, 232, 232);
+        padding: 20px;
+        display: inline;
+    }
+
+    a {
+        font-size: larger;
+        color: white;
+    }
+
+    div h1 {
+        justify-content: center;
+        font-size: 1.2cm;
+        color: rgb(6, 1, 75);
+        text-align: center;
+        padding: 0px;
+       
+    }
+
+    .text h1 {
+        background-color: #dde7f3;
+        height: 50px;
+        width: 1350px;
+        margin: 0px;      
+        box-shadow: 4px 4px 10px rgba(73, 60, 255, 0.5);
+        padding: 10px;
+        display: inline-block;
+
+    }
+    div section button{
+        height: 50px;
+        width: 300px;
+        background-color: rgb(239, 241, 243);
+        padding-left: 50px;
+        margin: 0;
+        display: inline-flexbox;
+        top: 0;
+        border: none;
+        padding-bottom: 50px;
+    }
+    div section{
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    button{
+        font-size: medium;
+        padding: 20px;
+    }
+    div section button:nth-child(n):hover {
+        transform: translateY(-5px);
+        background: rgb(0, 38, 255);
+        color: white;
+    }
+    footer{
+        
+        display: flex;
+        justify-content: center; /* Horizontally center */
+        align-items: center; /* Vertically center */
+        height: 40px;
+        width: 1350px;
+        background-color: rgb(2, 2, 43);
+        color: white;
+    }
+    
+</style>
+
+<body>
+    <div class="text">
+        <h1>Job Search Portal</h1>
+    </div>
+    <div class="bgc">
+        <img src="C:\Users\1802a\OneDrive\Documents\jobPortal.jpg" alt="">
+    </div>
+
+    <main>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="a">Home</a></li>
+                    <li><a href="jobs.html">Job listing</a></li>
+                    <li><a href="">company</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="user.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h1>Find your Dream Job</h1>
+        </div>
+        <div> 
+            <section>         
+                <button>Keywords</button>
+                <button>Location</button>
+                <button>Company</button>
+                <button>Search</button> 
+            </section>           
+        </div>
+
+    </main>
+    
+    
+    <footer>
+        <p>@2025 job Board, All Rights Reserved<p>
+    </footer>
+</body>
+
+</html>
