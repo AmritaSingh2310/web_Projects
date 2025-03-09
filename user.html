@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+body {
+    font-family: Arial, sans-serif;
+    background-color: #adc5f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0px;
+}
+
+/* Form heading styling */
+h1 {
+    padding-top: 0;
+    background-color: #0011ff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form container styling */
+.form {
+    background: rgb(240, 240, 241);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    
+    max-width: 400px;
+    text-align: left;
+    margin-top: 20px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Glowing effect on form */
+.form:hover {
+    box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.8);
+    transform: scale(1.02);
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Input fields */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Radio button group */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0c08f8;
+    box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.8);
+    transform: scale(1.02);
+    color: azure;
+}
+
+
+
+</style>
+<body>
+    <h1>Form for student verification</h1>
+    <div class="form">
+    <form action="./idex.html" method ='GET'>
+        <label for="username">username:
+            <input type = "text" id="username" placeholder="username" required>
+        <label for="password">password:
+            <input type = "password" id="password" placeholder="password" required>
+            
+        <label for="Email">Email
+            <input type = "email" id="Email" placeholder="Email" required>
+            
+        <label for="city">city:
+            <input type = "city" id="city" placeholder="city" required>
+            
+            <p>select your gender</p>
+            <label for ="male">male</label>
+             <input class="radio-group" type = "radio" name="gender" id="male" >
+            <label for ="female">female</label> 
+            <input class="radio-group" type = "radio" name="gender" id="female" >
+            <label for ="other">other</label>
+             <input class="radio-group" type = "radio" name="gender"  id="other" >
+            
+            <label for = "age value">select your age</label>
+            <select name="age value" id="age value">
+            <option value="5-10">5-10</option>
+            <option value="11-20">11-20</option>
+            <option value="21-35">21-35</option>
+            <option value="36-50">36-50</option>
+            <option value="51-80">51-10</option>
+        </select>
+        <textarea name="input text" id="area" cols="30" rows="10" placeholder="type here">Why we hire you</textarea><br><br>
+        
+            <button>Submit</button>
+        </label>
+    </form>
+    </div>
+</body>
+</html>
